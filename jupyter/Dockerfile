@@ -19,4 +19,4 @@ ENV USER admin
 ENV SHELL bash
 
 
-ENTRYPOINT ["/etc/slurm-llnl/entrypoint.sh"]
+ENTRYPOINT ["/etc/slurm-llnl/Docker-entrypoint.sh"]
