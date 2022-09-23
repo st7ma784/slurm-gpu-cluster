@@ -1,46 +1,97 @@
 services:
   slurmjupyter:
-        image: slurm-jupyter:19.05.5-1
+        image: st7ma784/jupyterslurm:latest
         hostname: slurmjupyter
         user: admin
+        restart: always
+        deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  count: 1
+                  capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
+                - shared-env:/env
         ports:
                 - 8888:8888
   slurmmaster:
-        image: slurm-master:19.05.5-1
+        image: st7ma784/slurm-master
         hostname: slurmmaster
         user: admin
+        restart: always
         volumes:
                 - shared-vol:/home/admin
+                
         ports:
                 - 6817:6817
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
-        image: slurm-node:19.05.5-1
+        image: st7ma784/slurm-node
         hostname: slurmnode1
         user: admin
+        restart: always
+        deploy:
+          resources:
+            reservations:
+              devices:
+              - driver: nvidia
+                count: 1
+                capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
+                - shared-env:/env
+
+        environment:
+                - SLURM_NODENAME=slurmnode1
         links:
                 - slurmmaster
   slurmnode2:
-        image: slurm-node:19.05.5-1
+        image: st7ma784/slurm-node
         hostname: slurmnode2
         user: admin
+        restart: always
+        deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  count: 1
+                  capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
+                - shared-env:/env
+
+        environment:
+                - SLURM_NODENAME=slurmnode2
         links:
                 - slurmmaster
   slurmnode3:
-        image: slurm-node:19.05.5-1
+        image: st7ma784/slurm-node
         hostname: slurmnode3
         user: admin
+        restart: always
         volumes:
                 - shared-vol:/home/admin
+                - shared-env:/env
+
+        environment:
+                - SLURM_NODENAME=slurmnode3
         links:
                 - slurmmaster
-volumes:
-        shared-vol:
 
+volumes:
+  shared-vol:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/DATA'
+  shared-env:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/home/user/miniconda3/envs/jupyter-open-ce'
