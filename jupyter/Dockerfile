@@ -11,7 +11,7 @@ RUN apt update -y && apt install nodejs -y && npm install -g configurable-http-p
 
 COPY slurm.conf /etc/slurm-llnl/
 COPY cgroup.conf /etc/slurm-llnl/
-COPY Docker-entrypoint.sh /etc/slurm-llnl/
+COPY docker-entrypoint.sh /etc/slurm-llnl/
 
 WORKDIR /home/admin
 EXPOSE 8888
@@ -19,4 +19,4 @@ ENV USER admin
 ENV SHELL bash
 
 
-ENTRYPOINT ["/etc/slurm-llnl/Docker-entrypoint.sh"]
+ENTRYPOINT ["/etc/slurm-llnl/docker-entrypoint.sh"]
