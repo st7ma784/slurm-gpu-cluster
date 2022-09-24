@@ -13,7 +13,7 @@ services:
                   capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
-                - shared-env:/env
+                #- shared-env:/root/miniconda3/envs/env
         ports:
                 - 8888:8888
   slurmmaster:
@@ -42,7 +42,6 @@ services:
                 capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
-                - shared-env:/env
 
         environment:
                 - SLURM_NODENAME=slurmnode1
@@ -62,7 +61,6 @@ services:
                   capabilities: [gpu]
         volumes:
                 - shared-vol:/home/admin
-                - shared-env:/env
 
         environment:
                 - SLURM_NODENAME=slurmnode2
@@ -89,9 +87,9 @@ volumes:
       type: 'none'
       o: 'bind'
       device: '/DATA'
-  shared-env:
-    driver: local
-    driver_opts:
-      type: 'none'
-      o: 'bind'
-      device: '/home/user/miniconda3/envs/jupyter-open-ce'
+#shared-env:
+#     driver: local
+#     driver_opts:
+#       type: 'none'
+#       o: 'bind'
+#       device: '/home/user/miniconda3/envs/open-ce'
