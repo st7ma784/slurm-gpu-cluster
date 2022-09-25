@@ -1,6 +1,4 @@
-FROM ubuntu:20.04
-
-RUN apt update -y && apt install munge -y && apt install vim -y && apt install build-essential -y && apt install git -y && apt-get install mariadb-server -y && apt install wget -y
+FROM ubuntu:20.04 as base
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt install slurmd slurm-client slurmctld -y
@@ -11,6 +9,7 @@ RUN apt install slurmd slurm-client slurmctld -y
 COPY slurm.conf /etc/slurm-llnl/
 COPY cgroup.conf /etc/slurm-llnl/
 COPY docker-entrypoint.sh /etc/slurm-llnl/
+FROM base
 
 EXPOSE 6817 6818 6819 3306 
 

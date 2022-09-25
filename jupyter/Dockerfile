@@ -11,6 +11,7 @@ RUN apt install slurm-client curl dirmngr apt-transport-https lsb-release ca-cer
 
 COPY slurm.conf /etc/slurm-llnl/
 COPY cgroup.conf /etc/slurm-llnl/
+ENV SHELL bash
 COPY docker-entrypoint.sh /etc/slurm-llnl/
 
 WORKDIR /home/root
@@ -24,4 +25,3 @@ EXPOSE 8888
 RUN pip3 install jupyterlab jupyterlab_slurm torch
 RUN pip3 install jupyterlab-drawio jupyterlab-execute-time jupyterlab-system-monitor jupyterlab-git
 
-ENTRYPOINT ["/etc/slurm-llnl/docker-entrypoint.sh"]
