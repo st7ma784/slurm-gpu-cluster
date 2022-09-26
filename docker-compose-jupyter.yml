@@ -1,59 +1,70 @@
-version: '3.7' 
 services:
   slurmjupyter:
-        image: st7ma784/slurmjupyter:latest
+        image: vanillajupyter
         hostname: slurmjupyter
-        restart: always
-        deploy:
-          resources:
-            reservations:
-              devices:
-                - driver: nvidia
-                  count: 1
-                  capabilities: [gpu]
-        #links:
-        #  - slurmmaster
         volumes:
                 - shared-vol:/home/root
-                #- shared-env:/root/miniconda3/envs/env
         ports:
                 - 8888:8888
-     
+        deploy:
+        #   resources:
+        #     reservations:
+        #       devices:
+        #         - driver: nvidia
+        #           capabilities: [gpu]
   slurmmaster:
-        image: st7ma784/slurm-master:latest
+        image: vanillamaster
         hostname: slurmmaster
-        restart: always
         volumes:
-                - shared-vol:/home/root/
+                - shared-vol:/home/root
         ports:
                 - 6817:6817
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
-        image: st7ma784/slurm-node:latest
+        image: vanillanode
         hostname: slurmnode1
-        restart: always 
         volumes:
-                - shared-vol:/home/root/
+                - shared-vol:/home/root
         links:
                 - slurmmaster
-        deploy:
-          resources:
-            reservations:
-              devices:
-                - driver: nvidia
-                  capabilities: [gpu]
+  slurmnode2:
+        image: vanillanode
+        hostname: slurmnode2
+        volumes:
+                - shared-vol:/home/root
+        links:
+                - slurmmaster
+  slurmnode3:
+        image: vanillanode
+        hostname: slurmnode3
+        volumes:
+                - shared-vol:/home/root
+        links:
+                - slurmmaster
+  slurmnode4:
+        image: vanillanode
+        hostname: slurmnode4
+        volumes:
+                - shared-vol:/home/root
+        links:
+                - slurmmaster
 
+  slurmnode5:
+        image: vanillanode
+        hostname: slurmnode5
+        volumes:
+                - shared-vol:/home/root
+        links:
+                - slurmmaster
+  slurmnode6:
+        image: vanillanode
+        hostname: slurmnode6
+        volumes:
+                - shared-vol:/home/root
+        links:
+                - slurmmaster
 volumes:
-  shared-vol:
-    driver: local
-    driver_opts:
-      type: 'none'
-      o: 'bind'
-      device: '/DATA'
-#shared-env:
-#     driver: local
-#     driver_opts:
-#       type: 'none'
-#       o: 'bind'
-#       device: '/home/user/miniconda3/envs/open-ce'
+        shared-vol:
+
+version: '3'
