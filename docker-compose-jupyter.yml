@@ -1,7 +1,7 @@
 version: '3.7' 
 services:
   slurmjupyter:
-        image: st7ma784/jupyter:latest
+        image: st7ma784/slurmjupyter:latest
         hostname: slurmjupyter
         restart: always
         deploy:
@@ -11,6 +11,8 @@ services:
                 - driver: nvidia
                   count: 1
                   capabilities: [gpu]
+        #links:
+        #  - slurmmaster
         volumes:
                 - shared-vol:/home/root
                 #- shared-env:/root/miniconda3/envs/env
@@ -18,8 +20,9 @@ services:
                 - 8888:8888
      
   slurmmaster:
-        image: st7ma784/master:latest
+        image: st7ma784/slurm-master:latest
         hostname: slurmmaster
+        restart: always
         volumes:
                 - shared-vol:/home/root/
         ports:
@@ -27,19 +30,19 @@ services:
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
-        image: st7ma784/node:latest
+        image: st7ma784/slurm-node:latest
         hostname: slurmnode1
-
+        restart: always 
         volumes:
                 - shared-vol:/home/root/
         links:
                 - slurmmaster
-        # deploy:
-        #   resources:
-        #     reservations:
-        #       devices:
-        #         - driver: nvidia
-        #           capabilities: [gpu]
+        deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  capabilities: [gpu]
 
 volumes:
   shared-vol:
