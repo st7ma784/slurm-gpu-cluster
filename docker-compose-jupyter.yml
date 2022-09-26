@@ -66,5 +66,11 @@ services:
                 - slurmmaster
 volumes:
         shared-vol:
+        
+    driver: local
+#     driver_opts:
+#       type: 'none'
+#       o: 'bind'
+#       device: '/DATA'
 
 version: '3'
