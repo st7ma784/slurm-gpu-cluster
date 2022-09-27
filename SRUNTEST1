@@ -1,0 +1,269 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+Nodelist:=  slurmnode[1-4]
+Number of nodes:=  4
+Ntasks per node:= 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+Run started at:- 
+Tue Sep 27 22:03:36 UTC 2022
+Requirement already satisfied: test-tube in /usr/local/lib/python3.8/dist-packages (0.7.5)
+Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.8/dist-packages (1.7.7)
+Requirement already satisfied: test-tube in /usr/local/lib/python3.8/dist-packages (0.7.5)
+Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.8/dist-packages (1.7.7)
+Requirement already satisfied: test-tube in /usr/local/lib/python3.8/dist-packages (0.7.5)
+Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.8/dist-packages (1.7.7)
+Requirement already satisfied: test-tube in /usr/local/lib/python3.8/dist-packages (0.7.5)
+Requirement already satisfied: pytorch-lightning in /usr/local/lib/python3.8/dist-packages (1.7.7)
+Requirement already satisfied: pandas>=0.20.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.5.0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.23.3)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.23.3)
+Requirement already satisfied: torch>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.12.1)
+Requirement already satisfied: pandas>=0.20.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.5.0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.23.3)
+Requirement already satisfied: tensorboard>=1.15.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.10.1)
+Requirement already satisfied: imageio>=2.3.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.22.0)
+Requirement already satisfied: torch>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.12.1)
+Requirement already satisfied: future in /usr/local/lib/python3.8/dist-packages (from test-tube) (0.18.2)
+Requirement already satisfied: torch>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.12.1)
+Requirement already satisfied: tensorboard>=1.15.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.10.1)
+Requirement already satisfied: tensorboard>=1.15.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.10.1)
+Requirement already satisfied: imageio>=2.3.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.22.0)
+Requirement already satisfied: imageio>=2.3.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.22.0)
+Requirement already satisfied: pandas>=0.20.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.5.0)
+Requirement already satisfied: imageio>=2.3.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.22.0)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.23.3)
+Requirement already satisfied: future in /usr/local/lib/python3.8/dist-packages (from test-tube) (0.18.2)
+Requirement already satisfied: pandas>=0.20.3 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.5.0)
+Requirement already satisfied: future in /usr/local/lib/python3.8/dist-packages (from test-tube) (0.18.2)
+Requirement already satisfied: torch>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (1.12.1)
+Requirement already satisfied: tensorboard>=1.15.0 in /usr/local/lib/python3.8/dist-packages (from test-tube) (2.10.1)
+Requirement already satisfied: tqdm>=4.57.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.64.1)
+Requirement already satisfied: future in /usr/local/lib/python3.8/dist-packages (from test-tube) (0.18.2)
+Requirement already satisfied: torchmetrics>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.9.3)
+Requirement already satisfied: packaging>=17.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (21.3)
+Requirement already satisfied: packaging>=17.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (21.3)
+Requirement already satisfied: packaging>=17.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (21.3)
+Requirement already satisfied: fsspec[http]!=2021.06.0,>=2021.05.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (2022.8.2)
+Requirement already satisfied: PyYAML>=5.4 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (6.0)
+Requirement already satisfied: fsspec[http]!=2021.06.0,>=2021.05.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (2022.8.2)
+Requirement already satisfied: fsspec[http]!=2021.06.0,>=2021.05.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (2022.8.2)
+Requirement already satisfied: pyDeprecate>=0.3.1 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.3.2)
+Requirement already satisfied: tqdm>=4.57.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.64.1)
+Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.3.0)
+Requirement already satisfied: torchmetrics>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.9.3)
+Requirement already satisfied: pyDeprecate>=0.3.1 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.3.2)
+Requirement already satisfied: torchmetrics>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.9.3)
+Requirement already satisfied: tqdm>=4.57.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.64.1)
+Requirement already satisfied: torchmetrics>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.9.3)
+Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.3.0)
+Requirement already satisfied: PyYAML>=5.4 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (6.0)
+Requirement already satisfied: pyDeprecate>=0.3.1 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.3.2)
+Requirement already satisfied: fsspec[http]!=2021.06.0,>=2021.05.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (2022.8.2)
+Requirement already satisfied: packaging>=17.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (21.3)
+Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.3.0)
+Requirement already satisfied: tqdm>=4.57.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.64.1)
+Requirement already satisfied: typing-extensions>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (4.3.0)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2.8.2)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2022.2.1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.4.1)
+Requirement already satisfied: PyYAML>=5.4 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (6.0)
+Requirement already satisfied: pyDeprecate>=0.3.1 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (0.3.2)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.4.6)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2022.2.1)
+Requirement already satisfied: pillow>=8.3.2 in /usr/local/lib/python3.8/dist-packages (from imageio>=2.3.0->test-tube) (9.2.0)
+Requirement already satisfied: PyYAML>=5.4 in /usr/local/lib/python3.8/dist-packages (from pytorch-lightning) (6.0)
+Requirement already satisfied: google-auth<3,>=1.6.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.12.0)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.2.2)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.2.0)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (0.34.2)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (45.2.0)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.2.2)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.2.0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2022.2.1)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.8.1)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.28.1)
+Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.6.1)
+Requirement already satisfied: protobuf<3.20,>=3.9.2 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.19.5)
+Requirement already satisfied: protobuf<3.20,>=3.9.2 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.19.5)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.28.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2.8.2)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.4.1)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (45.2.0)
+Requirement already satisfied: google-auth<3,>=1.6.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.12.0)
+Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.6.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.4.6)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.8.1)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.2.2)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.28.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (0.34.2)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (0.34.2)
+Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.6.1)
+Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.6.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.4.6)
+Requirement already satisfied: protobuf<3.20,>=3.9.2 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.19.5)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.4.1)
+Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.4.1)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (45.2.0)
+Requirement already satisfied: google-auth<3,>=1.6.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.12.0)
+Requirement already satisfied: requests<3,>=2.21.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.28.1)
+Requirement already satisfied: wheel>=0.26 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (0.34.2)
+Requirement already satisfied: google-auth<3,>=1.6.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.12.0)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.49.1)
+Requirement already satisfied: pillow>=8.3.2 in /usr/local/lib/python3.8/dist-packages (from imageio>=2.3.0->test-tube) (9.2.0)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.49.1)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.2.0)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.49.1)
+Requirement already satisfied: absl-py>=0.4 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.2.0)
+Requirement already satisfied: pillow>=8.3.2 in /usr/local/lib/python3.8/dist-packages (from imageio>=2.3.0->test-tube) (9.2.0)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.8.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (0.4.6)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.8/dist-packages (from pandas>=0.20.3->test-tube) (2022.2.1)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging>=17.0->pytorch-lightning) (3.0.9)
+Requirement already satisfied: pillow>=8.3.2 in /usr/local/lib/python3.8/dist-packages (from imageio>=2.3.0->test-tube) (9.2.0)
+Requirement already satisfied: protobuf<3.20,>=3.9.2 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (3.19.5)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.8.1)
+Requirement already satisfied: grpcio>=1.24.3 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (1.49.1)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http" in /usr/local/lib/python3.8/dist-packages (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (3.8.3)
+Requirement already satisfied: setuptools>=41.0.0 in /usr/lib/python3/dist-packages (from tensorboard>=1.15.0->test-tube) (45.2.0)
+Requirement already satisfied: werkzeug>=1.0.1 in /usr/local/lib/python3.8/dist-packages (from tensorboard>=1.15.0->test-tube) (2.2.2)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http" in /usr/local/lib/python3.8/dist-packages (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (3.8.3)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging>=17.0->pytorch-lightning) (3.0.9)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging>=17.0->pytorch-lightning) (3.0.9)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging>=17.0->pytorch-lightning) (3.0.9)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http" in /usr/local/lib/python3.8/dist-packages (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (3.8.3)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http" in /usr/local/lib/python3.8/dist-packages (from fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (3.8.3)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.8.1->pandas>=0.20.3->test-tube) (1.16.0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.8.1->pandas>=0.20.3->test-tube) (1.16.0)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in /usr/local/lib/python3.8/dist-packages (from markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (4.12.0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.8.1->pandas>=0.20.3->test-tube) (1.16.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.2.8)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (5.2.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2022.9.24)
+Requirement already satisfied: rsa<5,>=3.1.4; python_version >= "3.6" in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (4.9)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.4)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.8/dist-packages (from werkzeug>=1.0.1->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.8/dist-packages (from werkzeug>=1.0.1->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (1.26.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (1.26.12)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (1.3.1)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in /usr/local/lib/python3.8/dist-packages (from markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (4.12.0)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.8/dist-packages (from werkzeug>=1.0.1->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (1.26.12)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2022.9.24)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.4)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.4)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in /usr/local/lib/python3.8/dist-packages (from markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (4.12.0)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2022.9.24)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in /usr/local/lib/python3.8/dist-packages (from markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (4.12.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (1.26.12)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (3.4)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (5.2.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.2.8)
+Requirement already satisfied: rsa<5,>=3.1.4; python_version >= "3.6" in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (4.9)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (5.2.0)
+Requirement already satisfied: rsa<5,>=3.1.4; python_version >= "3.6" in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (4.9)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (6.0.2)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.2.8)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (22.1.0)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (1.3.1)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2022.9.24)
+Requirement already satisfied: six>=1.9.0 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (1.16.0)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests<3,>=2.21.0->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.8/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (1.3.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (6.0.2)
+Requirement already satisfied: cachetools<6.0,>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (5.2.0)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.8.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /usr/local/lib/python3.8/dist-packages (from werkzeug>=1.0.1->tensorboard>=1.15.0->test-tube) (2.1.1)
+Requirement already satisfied: rsa<5,>=3.1.4; python_version >= "3.6" in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (4.9)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (4.0.2)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.3.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.2.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.8/dist-packages (from google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.2.8)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (22.1.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (22.1.0)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (4.0.2)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (22.1.0)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.8.1)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.8.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.2.0)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.2.0)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (4.0.2)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.3.1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4; python_version < "3.10"->markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (3.8.1)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.3.1)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.3.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.2.0)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /usr/local/lib/python3.8/dist-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.4.8)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (6.0.2)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (6.0.2)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.8/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (3.2.1)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"->fsspec[http]!=2021.06.0,>=2021.05.0->pytorch-lightning) (1.8.1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4; python_version < "3.10"->markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (3.8.1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4; python_version < "3.10"->markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (3.8.1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4; python_version < "3.10"->markdown>=2.6.8->tensorboard>=1.15.0->test-tube) (3.8.1)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.8/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (3.2.1)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /usr/local/lib/python3.8/dist-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.8/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (3.2.1)
+Requirement already satisfied: pyasn1>=0.1.3 in /usr/local/lib/python3.8/dist-packages (from rsa<5,>=3.1.4; python_version >= "3.6"->google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.8/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard>=1.15.0->test-tube) (3.2.1)
+Requirement already satisfied: pyasn1>=0.1.3 in /usr/local/lib/python3.8/dist-packages (from rsa<5,>=3.1.4; python_version >= "3.6"->google-auth<3,>=1.6.3->tensorboard>=1.15.0->test-tube) (0.4.8)
+NODE : slurmnode4
+/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+NODE : slurmnode1
+/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+NODE : slurmnode2
+/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+NODE : slurmnode3
+/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py:563: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Multiprocessing is handled by SLURM.
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+Running in `fast_dev_run` mode: will run the requested loop using 1 batch(es). Logging and checkpointing is suppressed.
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+----------------------------------------------------------------------------------------------------
+distributed_backend=gloo
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+
+  | Name | Type   | Params
+--------------------------------
+0 | l1   | Linear | 7.9 K 
+--------------------------------
+7.9 K     Trainable params
+0         Non-trainable params
+7.9 K     Total params
+0.031     Total estimated model params size (MB)
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+SLURM auto-requeueing enabled. Setting signal handlers.
+CALLED ON NODE : slurmnode3
+CALLED ON NODE : slurmnode4
+CALLED ON NODE : slurmnode2
+CALLED ON NODE : slurmnode1
+/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/connectors/data_connector.py:236: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py:1892: PossibleUserWarning: The number of training batches (1) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+  rank_zero_warn(
+[W reducer.cpp:1258] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1258] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1258] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1258] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+`Trainer.fit` stopped: `max_steps=1` reached.
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/1 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/1 [00:00<?, ?it/s] Epoch 0: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s]Epoch 0: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, loss=2.23, v_num=]Epoch 0: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, loss=2.23, v_num=]Epoch 0: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, loss=2.23, v_num=]

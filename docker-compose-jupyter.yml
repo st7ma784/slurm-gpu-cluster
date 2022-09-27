@@ -1,46 +1,78 @@
 services:
   slurmjupyter:
-        image: slurm-jupyter:19.05.5-1
+        image: vanillajupyter
         hostname: slurmjupyter
-        user: admin
         volumes:
-                - shared-vol:/home/admin
+                - shared-vol:/home/root
+                - shared-env:/env/open-ce
+                - shared-data:/data
+
         ports:
                 - 8888:8888
+        # deploy:
+        #   resources:
+        #     reservations:
+        #       devices:
+        #         - driver: nvidia
+        #           capabilities: [gpu]
   slurmmaster:
-        image: slurm-master:19.05.5-1
+        image: vanillamaster
         hostname: slurmmaster
-        user: admin
         volumes:
-                - shared-vol:/home/admin
+                - shared-vol:/home/root
         ports:
                 - 6817:6817
                 - 6818:6818
                 - 6819:6819
   slurmnode1:
-        image: slurm-node:19.05.5-1
+        image: vanillanode
         hostname: slurmnode1
-        user: admin
         volumes:
-                - shared-vol:/home/admin
+                - shared-vol:/home/root
+                - shared-env:/env/open-ce
+                - shared-data:/data
+
         links:
                 - slurmmaster
   slurmnode2:
-        image: slurm-node:19.05.5-1
+        image: vanillanode
         hostname: slurmnode2
-        user: admin
         volumes:
-                - shared-vol:/home/admin
+                - shared-vol:/home/root
+                - shared-env:/env/open-ce
+                - shared-data:/data
+
         links:
                 - slurmmaster
   slurmnode3:
-        image: slurm-node:19.05.5-1
+        image: vanillanode
         hostname: slurmnode3
-        user: admin
         volumes:
-                - shared-vol:/home/admin
+                - shared-vol:/home/root
+                - shared-env:/env/open-ce
+                - shared-data:/data
+
+        links:
+                - slurmmaster
+
+  slurmnode4:
+        image: vanillanode
+        hostname: slurmnode4
+        volumes:
+                - shared-vol:/home/root
+                - shared-env:/env/open-ce
+                - shared-data:/data
+
         links:
                 - slurmmaster
 volumes:
+        shared-env:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '/home/user/miniconda3/envs/pypytorch'
+        shared-data:
         shared-vol:
 
+version: '3'

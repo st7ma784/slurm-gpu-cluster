@@ -1,8 +1,9 @@
 #!/bin/bash
 
-sudo sed -i "s/REPLACE_IT/CPUs=$(nproc)/g" /etc/slurm-llnl/slurm.conf
+sed -i "s/REPLACE_IT/CPUs=$(nproc)/g" /etc/slurm-llnl/slurm.conf
+conda activate /env/open-ce
+service munge start
 
-sudo service munge start
-sudo slurmd -N $(hostname)
+slurmd -N $(hostname)
 
 tail -f /dev/null
