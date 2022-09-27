@@ -1,9 +1,11 @@
-FROM ubuntu:20.04
 
-RUN apt update -y && apt install munge -y && apt install vim -y && apt install build-essential -y && apt install git -y && apt-get install mariadb-server -y && apt install wget -y
+#FROM condaforge/mambaforge
+FROM ubuntu:20.04
+RUN apt update -y && apt install munge -y 
+RUN apt install vim -y && apt install build-essential -y && apt install git -y && apt-get install mariadb-server -y && apt install wget -y
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt install slurm-client -y
+RUN apt install slurm-client slurmd -y
 RUN apt install curl dirmngr apt-transport-https lsb-release ca-certificates -y
 #RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 #RUN apt install sudo -y 
@@ -14,7 +16,7 @@ RUN apt install python3.9 python3-pip -y
 
 COPY slurm.conf /etc/slurm-llnl/
 COPY cgroup.conf /etc/slurm-llnl/
-COPY docker-entrypoint.sh /etc/slurm-llnl/
+ENV SHELL bash
 
 WORKDIR /home/root
 
