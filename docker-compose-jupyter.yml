@@ -7,6 +7,7 @@ services:
                 - shared-vol:/home/root
                 - shared-env:/env/open-ce
                 - shared-data:/data
+                - conda-dir:/miniconda/
 
         ports:
                 - 8888:8888
@@ -32,6 +33,7 @@ services:
                 - shared-vol:/home/root
                 - shared-env:/env/open-ce
                 - shared-data:/data
+                - conda-dir:/miniconda/
 
         links:
                 - slurmmaster
@@ -42,6 +44,7 @@ services:
                 - shared-vol:/home/root
                 - shared-env:/env/open-ce
                 - shared-data:/data
+                - conda-dir:/miniconda/
 
         links:
                 - slurmmaster
@@ -52,6 +55,7 @@ services:
                 - shared-vol:/home/root
                 - shared-env:/env/open-ce
                 - shared-data:/data
+                - conda-dir:/miniconda/
 
         links:
                 - slurmmaster
@@ -63,6 +67,7 @@ services:
                 - shared-vol:/home/root
                 - shared-env:/env/open-ce
                 - shared-data:/data
+                - conda-dir:/miniconda/
 
         links:
                 - slurmmaster
@@ -75,5 +80,11 @@ volumes:
                         device: '/home/user/miniconda3/envs/pypytorch'
         shared-data:
         shared-vol:
+        conda-dir:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '/home/user/miniconda3'
 
 version: '3'
